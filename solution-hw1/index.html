@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
   </head>
   
   
@@ -23,10 +24,13 @@
     <img class="logo" src="../assets/logo/logo-01.svg" />
     <hr />
     <nav>
-      <ul>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#cart">Cart</a></li>
-      </ul>
+      <div class="menu">
+        <a href="index.html">
+          <span class="current-page">PRODUCTS</span>
+        </a>
+        <br />
+        <a href="cart.html">CART</a>
+      </div>
     </nav>
     
     <main>
@@ -35,12 +39,14 @@
 
       <section>
         <div class="gallery-card">
-          <img class="gallery-image" src="../assets/products/original-cinnamon-roll.jpg"/>
-          <p class="gallery-text">
-            <span id="gallery-item-name">Original cinnamon roll</span>
-            <br />
-            <span id="gallery-item-price">$ 2.49</span>
-          </p>
+          <a href="detail.html"><img class="gallery-image" src="../assets/products/original-cinnamon-roll.jpg"/>
+            <p class="gallery-text">
+              <span id="gallery-item-name">Original cinnamon roll</span>
+              <br />
+              <span id="gallery-item-price">$ 2.49</span>
+            </p>
+          </a>
+          
         </div>
       </section>
 

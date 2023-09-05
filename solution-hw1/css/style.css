@@ -1,0 +1,126 @@
+* {
+    margin: 0px auto;
+}
+
+body {
+    font-family: Roboto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 200%;
+    font-size: 28px;
+}
+
+.current-page {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.gallery-card {
+    width: 400px;
+    border: 10px solid white;
+}
+
+.gallery-card:hover {
+    background-color: yellow;
+    border-color: yellow;
+    font-weight: bold;
+}
+
+.gallery-image {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+}
+
+/* Make sure not to specify font weight here! It'll override the hover effect. */
+p.gallery-text {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+#gallery-item-name {
+    text-decoration: underline;
+    
+}
+
+#gallery-item-price {
+    font-weight: normal;
+}
+
+.details-card {
+    width: 600px;
+    font-size: 16px;
+}
+
+.details-image {
+    width: 600px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.details-text {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+
+.order {
+    font-weight: bold;
+    width: 200px;
+}
+
+.details-pricing {
+    display: inline-block;
+}
+
+.cart-button {
+    background-color: yellow;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 7px 20px;
+    margin-left: 5px;
+}
+
+/*
+
+SHOPPING CART IN-LINE STYLING
+
+.add-cart {
+    background-color: yellow;
+    padding: 10px;
+    border: 2px solid black;
+}
+*/
+
+
+
+
+
+
