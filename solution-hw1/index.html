@@ -1,15 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <head>
+
+    <title>Product Gallery</title>
+
+    <!-- Links to obtain fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
   
   <body>
 
-    <h1>I am the solution to HW1!</h1>
+    <img class="logo" src="../assets/logo/logo-01.svg" />
+    <hr />
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+    
+    <main>
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+      <h1>Our hand-made cinnamon rolls</h1>
+
+      <section>
+        <div class="gallery-card">
+          <img class="gallery-image" src="../assets/products/original-cinnamon-roll.jpg"/>
+          <p class="gallery-text">
+            <span id="gallery-item-name">Original cinnamon roll</span>
+            <br />
+            <span id="gallery-item-price">$ 2.49</span>
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="gallery-card">
+          <img class="gallery-image" src="../assets/products/apple-cinnamon-roll.jpg"/>
+          <div>
+            Apple cinnamon roll
+          </div>
+          <div>
+            $3.49
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="gallery-card">
+          <img class="gallery-image" src="../assets/products/raisin-cinnamon-roll.jpg"/>
+          <div>
+            Raisin cinnamon roll
+          </div>
+          <div>
+            $2.99
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="gallery-card">
+          <img class="gallery-image" src="../assets/products/walnut-cinnamon-roll.jpg"/>
+          <div>
+            Walnut cinnamon roll
+          </div>
+          <div>
+            $3.49
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="gallery-card">
+          <img class="gallery-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg"/>
+          <div>
+            Double-chocolate cinnamon roll
+          </div>
+          <div>
+            $3.99
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="gallery-card">
+          <img class="gallery-image" src="../assets/products/strawberry-cinnamon-roll.jpg"/>
+          <div>
+            Strawberry cinnamon roll
+          </div>
+          <div>
+            $3.99
+          </div>
+        </div>
+      </section>
+      
+
+    </main>
+    
+    
 
   </body>
 </html>
