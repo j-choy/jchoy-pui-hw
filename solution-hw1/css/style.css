@@ -37,16 +37,28 @@ a {
     color: black;
 }
 
+hr.top-separator {
+    border: 3px solid black;
+    width: 98%
+}
+
 /* ---------- GALLERY ------------------------------------------------------ */
 
 .gallery-card {
     width: 406px;
+    /*
     border: 10px solid white;
+    */
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .gallery-card:hover {
     background-color: yellow;
+    /*
     border-color: yellow;
+    */
     font-weight: bold;
 }
 
@@ -150,8 +162,27 @@ SHOPPING CART IN-LINE STYLING
     display: block;
 }
 
-#total-price {
-    margin-top: 20px;
+.total-amount {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
+#total-price-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkout-button {
+    background-color: yellow;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 7px 20px;
+    /*
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    
+}
 
