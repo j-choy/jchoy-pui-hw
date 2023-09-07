@@ -148,6 +148,7 @@ SHOPPING CART IN-LINE STYLING
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -173,7 +174,12 @@ SHOPPING CART IN-LINE STYLING
     display: block;
 }
 
-.total-amount {
+.total-separator {
+    width: 50%;
+    border: 2px solid black;
+}
+
+.checkout {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
