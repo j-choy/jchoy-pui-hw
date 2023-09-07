@@ -77,12 +77,12 @@ p.gallery-text {
     margin-top: 10px;
 }
 
-#gallery-item-name {
+.gallery-item-name {
     text-decoration: underline;
     
 }
 
-#gallery-item-price {
+.gallery-item-price {
     font-weight: normal;
 }
 
@@ -112,11 +112,13 @@ p.gallery-text {
 
 .order {
     font-weight: bold;
-    width: 200px;
+    width: 600px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .details-pricing {
+    font-size: 20px;
     display: inline-block;
 }
 
@@ -124,8 +126,9 @@ p.gallery-text {
     background-color: yellow;
     border: 2px solid black;
     font-weight: bold;
+    font-size: 20px;
     padding: 7px 20px;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 /*
