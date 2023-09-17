@@ -82,10 +82,10 @@ hr.top-separator {
 
 h1.current-page-heading {
     text-align: left;
-    margin-top: 70px;
+    margin-top: 55px;
     margin-bottom: 0px;
     margin-left: 40px;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 /* ---------- GALLERY ------------------------------------------------------ */
@@ -140,19 +140,23 @@ p.gallery-text {
 
 /* ---------- DETAILS PAGE ------------------------------------------------------ */
 
-.details-container {
+main.details-container {
     display: flex;
     gap: 0;
     margin-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 70px;
 }
 
 .dropdown-and-add-to-cart {
-    width: 33.33%;
+    width: 300px;
+    padding: 50px;
+    margin-left: 10px;
 }
 
 .details-card {
     width: 600px;
-    font-size: 16px;
+    margin-left: 100px;
 }
 
 .details-image {
@@ -161,8 +165,20 @@ p.gallery-text {
     margin-bottom: 20px;
 }
 
+#dropdown-description {
+    font-size: 24px;
+}
+
 .dropdown {
     margin-bottom: 20px;
+}
+
+label {
+    font-size: 24px;
+}
+
+select {
+    font-size: 24px;
 }
 
 .details-text {
@@ -180,17 +196,18 @@ p.gallery-text {
 }
 
 .details-pricing {
-    font-size: 20px;
+    font-size: 24px;
     text-align: right;
     margin: 0;
+    padding: 0px 15px;
 }
 
 .cart-button {
     background-color: yellow;
     border: 2px solid black;
     font-weight: bold;
-    font-size: 20px;
-    padding: 7px 20px;
+    font-size: 24px;
+    padding: 10px 20px;
     margin-right: 0;
     margin-left: 20px;
 }
@@ -213,15 +230,16 @@ SHOPPING CART IN-LINE STYLING
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-left: 10px;
+    margin-top: 100px;
 }
 
 .shopping-cart-card {
     align-items: center;
     display: flex;
-    width: 600px;
+    width: 680px;
     margin-left: 0;
     margin-right: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -239,9 +257,10 @@ SHOPPING CART IN-LINE STYLING
 
 .shopping-cart-text {
     width: 400px;
-    font-size: 20px;
+    font-size: 22px;
     text-align: left;
-    padding: 30px;
+    padding-left: 30px;
+    padding-bottom: 45px;
     /* margin-left: 15px;
     margin-top: 15px;
     margin-bottom: 20px; */
@@ -257,23 +276,33 @@ SHOPPING CART IN-LINE STYLING
 }
 
 .total-separator {
-    width: 98%;
-    border: 2px solid black;
+    width: 65%;
+    border: 3px solid black;
+    margin-left: 450px;
     margin-right: 0;
 }
 
 .checkout {
-    display: flex;
-    justify-content: flex-end;
+    text-align: end;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 60px;
 }
 
-#total-price-text {
+.total-price-text {
+    display: flex;
     font-size: 24px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.total-label {
+    margin-right: 0;
+}
+
+.total-price {
+    margin-left: 320px;
+    margin-right: 5px;
 }
 
 .checkout-button {

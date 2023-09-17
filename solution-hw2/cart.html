@@ -36,14 +36,10 @@
         <hr class="top-separator">
         <h1 class="current-page-heading">Shopping Cart</h1>
       </nav>
-  </header>
-    
-<!-- create a large div class around both shopping cart entries to adjust margins;
-Stick the <hr> inside the first large div, to make easier to adjust margins-->
-
-    
-
+    </header>
+  
     <div class="shopping-cart">
+      
       <section class="shopping-cart-card">
         <div class="shopping-cart-image-and-remove">
           <img class="shopping-cart-card-image" src="../assets/products/original-cinnamon-roll.jpg" width="200" alt="Original cinnamon roll" />
@@ -80,13 +76,29 @@ Stick the <hr> inside the first large div, to make easier to adjust margins-->
         <h1>$27.45</h1>
       </section>
 
-      <hr class="total-separator" />
+      
     </div>
+
+    <hr class="total-separator" />
 
       
 
-    <section class="checkout">
+    <!-- <section class="checkout">
       <p id="total-price-text">Total: $29.94</p>
+      <button class="checkout-button" type="button">
+        Checkout
+      </button>
+    </section> -->
+
+    <section class="checkout">
+      <div class="total-price-text">
+        <div class="total-label">
+          Total
+        </div>
+        <div class="total-price">
+          $29.94
+        </div>
+      </div>
       <button class="checkout-button" type="button">
         Checkout
       </button>
