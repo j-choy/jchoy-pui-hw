@@ -14,7 +14,7 @@ h1 {
 
 header {
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 50px;
     /* align-items: center; */
 }
@@ -23,9 +23,9 @@ header {
     width: 400px;
 } */
 
-a.logo {
+/* a.logo {
     display: flex;
-}
+} */
 
 .header-right {
     /*display: flex;
@@ -38,18 +38,15 @@ a.logo {
     width: 400px;
     display: flex;
     flex-grow: 0;
-    /*
-    margin-left: 30px;
-    margin-bottom: 20px;
-    */
+    margin-left: 20px;
 }
 
 .menu {
     display: flex;
     justify-content: flex-end;
     gap: 90px;
-    margin-right: 70px;
-    margin-top: 40px;
+    margin-right: 60px;
+    margin-top: 20px;
     line-height: 200%;
     font-size: 28px; 
 
@@ -79,15 +76,15 @@ a {
 hr.top-separator {
     border: 3px solid black;
     width: 98%;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 h1.current-page-heading {
     text-align: left;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-bottom: 0px;
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: 28px;
 }
 
