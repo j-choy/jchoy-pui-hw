@@ -14,7 +14,9 @@ h1 {
 
 header {
     display: flex;
-    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    /* align-items: center; */
 }
 
 /* .header-left {
@@ -47,7 +49,7 @@ a.logo {
     justify-content: flex-end;
     gap: 90px;
     margin-right: 70px;
-    margin-top: 60px;
+    margin-top: 40px;
     line-height: 200%;
     font-size: 28px; 
 
@@ -77,14 +79,16 @@ a {
 hr.top-separator {
     border: 3px solid black;
     width: 98%;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 h1.current-page-heading {
     text-align: left;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 0px;
     margin-left: 20px;
+    font-size: 28px;
 }
 
 /* ---------- GALLERY ------------------------------------------------------ */
@@ -92,10 +96,11 @@ h1.current-page-heading {
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .gallery-card {
-    width: 406px;
+    width: 290px;
     /*
     border: 10px solid white;
     */
@@ -113,8 +118,8 @@ h1.current-page-heading {
 }
 
 .gallery-image {
-    width: 400px;
-    height: 400px;
+    width: 285px;
+    height: 285px;
     border: 2px solid black;
     margin-left: auto;
     margin-right: auto;
@@ -138,6 +143,16 @@ p.gallery-text {
 
 /* ---------- DETAILS PAGE ------------------------------------------------------ */
 
+.details-container {
+    display: flex;
+    gap: 0;
+    margin-top: 50px;
+}
+
+.dropdown-and-add-to-cart {
+    width: 33.33%;
+}
+
 .details-card {
     width: 600px;
     font-size: 16px;
@@ -150,26 +165,27 @@ p.gallery-text {
 }
 
 .dropdown {
-    width: 200px;
     margin-bottom: 20px;
 }
 
 .details-text {
-    width: 200px;
     margin-bottom: 50px;
 }
 
 
 .order {
     font-weight: bold;
-    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     margin-bottom: 50px;
-    text-align: center;
+    margin-top: 100px;
 }
 
 .details-pricing {
     font-size: 20px;
-    display: inline-block;
+    text-align: right;
+    margin: 0;
 }
 
 .cart-button {
@@ -178,6 +194,7 @@ p.gallery-text {
     font-weight: bold;
     font-size: 20px;
     padding: 7px 20px;
+    margin-right: 0;
     margin-left: 20px;
 }
 
@@ -194,25 +211,43 @@ SHOPPING CART IN-LINE STYLING
 
 /* ---------- SHOPPING CART ------------------------------------------------------ */
 
+.shopping-cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
+
 .shopping-cart-card {
+    align-items: center;
+    display: flex;
     width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 60px;
     margin-bottom: 60px;
     text-align: center;
+}
+
+.shopping-cart-image-and-remove {
+    margin-left: 0px;
 }
 
 .remove {
     text-decoration: underline;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-left: 0;
+    text-align: left;
 }
 
 .shopping-cart-text {
+    width: 400px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    padding: 30px;
+    /* margin-left: 15px;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 
 .shopping-cart-card-image {
@@ -225,14 +260,17 @@ SHOPPING CART IN-LINE STYLING
 }
 
 .total-separator {
-    width: 50%;
+    width: 98%;
     border: 2px solid black;
+    margin-right: 0;
 }
 
 .checkout {
+    display: flex;
+    justify-content: flex-end;
     margin-top: 50px;
     margin-bottom: 50px;
-    text-align: center;
+    margin-right: 60px;
 }
 
 #total-price-text {
@@ -247,6 +285,7 @@ SHOPPING CART IN-LINE STYLING
     font-size: 20px;
     font-weight: bold;
     padding: 7px 20px;
+    margin-right: 0;
     /*
     display: block;
     margin-left: auto;

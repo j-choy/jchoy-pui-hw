@@ -21,66 +21,79 @@
   
   <body>
 
-    <a href="index.html">
-      <img class="logo" src="../assets/logo/logo-01.svg" width="400" alt="Bun Bun Bake Shop logo" />
-    </a>
-
-    <hr class="top-separator">
-
-    <nav>
-      <div class="menu">
-        <a href="index.html">PRODUCTS
-        </a>
-        <br />
-        <a href="cart.html">
-            <span class="current-page">CART</span>
-        </a>
-      </div>
-    </nav>
+    <header>
+      <a class="logo" href="index.html">
+        <img class="logo" src="../assets/logo/logo-01.svg" width="400" alt="Bun Bun Bake Shop logo" />
+      </a>
+      <nav class="header-right">
+        <div class="menu">
+          <a href="index.html">
+            <span class="current-page">PRODUCTS</span>
+          </a>
+          <a href="cart.html">
+            <span class="menu-link">CART</span></a>
+        </div>
+        <hr class="top-separator">
+        <h1 class="current-page-heading">Shopping Cart</h1>
+      </nav>
+  </header>
     
-    <main>
+<!-- create a large div class around both shopping cart entries to adjust margins;
+Stick the <hr> inside the first large div, to make easier to adjust margins-->
 
-        <h1>Shopping Cart</h1>
+    
 
-        <section class="shopping-cart-card">
-            <img class="shopping-cart-card-image" src="../assets/products/original-cinnamon-roll.jpg" width="200" alt="Original cinnamon roll" />
-            <span class="remove">Remove</span>
-            <p class="shopping-cart-text">
-                Original Cinnamon Roll
-                <br />
-                Glazing: Keep original
-                <br />
-                Pack Size: 1
-            </p>
-
-            <h1>$2.49</h1>
-        </section>
-
-        <section class="shopping-cart-card">
+    <div class="shopping-cart">
+      <section class="shopping-cart-card">
+        <div class="shopping-cart-image-and-remove">
           <img class="shopping-cart-card-image" src="../assets/products/original-cinnamon-roll.jpg" width="200" alt="Original cinnamon roll" />
-          <span class="remove">Remove</span>
-          <p class="shopping-cart-text">
-              Double Chocolate Cinnamon Roll
-              <br />
-              Glazing: Sugar milk
-              <br />
-              Pack Size: 6
-          </p>
+          <div class="remove">
+            Remove
+          </div>
+        </div>
+        <p class="shopping-cart-text">
+            Original Cinnamon Roll
+            <br />
+            Glazing: Keep original
+            <br />
+            Pack Size: 1
+        </p>
 
-          <h1>$27.45</h1>
+        <h1>$2.49</h1>
+      </section>
+
+      <section class="shopping-cart-card">
+        <div class="shopping-cart-image-and-remove">
+          <img class="shopping-cart-card-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg" width="200" alt="Original cinnamon roll" />
+          <div class="remove">
+            Remove
+          </div>
+        </div>
+        <p class="shopping-cart-text">
+            Double Chocolate Cinnamon Roll
+            <br />
+            Glazing: Sugar milk
+            <br />
+            Pack Size: 6
+        </p>
+
+        <h1>$27.45</h1>
       </section>
 
       <hr class="total-separator" />
+    </div>
 
-      <section class="checkout">
-        <p id="total-price-text">Total: $29.94</p>
-        <button class="checkout-button" type="button">
-          Checkout
-        </button>
-      </section>
       
 
-    </main>
+    <section class="checkout">
+      <p id="total-price-text">Total: $29.94</p>
+      <button class="checkout-button" type="button">
+        Checkout
+      </button>
+    </section>
+      
+
+    
 
   </body>
 </html>
