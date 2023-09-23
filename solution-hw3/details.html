@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Product Details</title>
+
+    <!-- Links to obtain fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./js/app.js" defer></script>
+
+  </head>
+  
+  
+  <body>
+
+    <header>
+      <a class="logo" href="index.html">
+        <img class="logo" src="../assets/logo/logo-01.svg" width="400" alt="Bun Bun Bake Shop logo" />
+      </a>
+      <nav class="header-right">
+        <div class="menu">
+          <a href="index.html">
+            <span class="current-page">PRODUCTS</span>
+          </a>
+          <a href="cart.html">
+            <span class="menu-link">CART</span></a>
+        </div>
+        <hr class="top-separator">
+        <h1 class="current-page-heading">Original cinnamon roll</h1>
+      </nav>
+    </header>
+    
+
+    <main class="details-container">
+
+      <!-- Left side details card container here -->
+
+      <div class="details-card">
+        <img class="details-image" src="../assets/products/original-cinnamon-roll.jpg" width="600" alt="Original cinnamon roll" />
+      </div>
+
+      <!-- Right side dropdown and add to cart here -->
+      <div class="dropdown-and-add-to-cart">
+        <!-- Dropdown lists here -->
+        <div class="details-text">
+          <p id="dropdown-description">Customise our delicious, hand-made cinnamon roll to your liking!</p>
+        </div>
+        <div class="dropdown">
+          <label for="glazing">Glazing:</label>
+          <br />
+
+          <select name="glazes" id="glazing"
+            onchange="glazingChange(this)">
+          </select>
+        </div>
+
+        <div class="dropdown">
+          <label for="sizing">Pack size:</label>
+          <br />
+
+          <select name="size" id="sizing">
+          </select>
+        </div>
+
+        <!-- Add to cart -->
+        
+        <div class="order">
+          <p class="details-pricing">$ 2.49</p>
+            <button class="cart-button" type="button">
+              Add to Cart
+            </button>
+        </div>
+      </div>
+    </main>
+
+    
+
+      
+
+
+  </body>
+</html>
