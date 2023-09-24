@@ -160,6 +160,8 @@ label {
 
 select {
     font-size: 24px;
+    width: 200px;
+    margin-top: 10px;
 }
 
 .details-text {
@@ -180,7 +182,7 @@ select {
     font-size: 24px;
     text-align: right;
     margin: 0;
-    padding: 0px 15px;
+    padding: 0px 10px;
 }
 
 .cart-button {

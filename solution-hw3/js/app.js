@@ -41,9 +41,9 @@ const packs = {
 
 function populateGlazing() {
 
-    var glazeDisplayedName = document.querySelector('#glazing');
+    let glazeDisplayedName = document.querySelector('#glazing');
 
-    for (var i = 0; i < glazes.names.length; i++) {
+    for (let i = 0; i < glazes.names.length; i++) {
         let option = document.createElement("option");
         option.setAttribute("value", glazes.prices[i]);
         option.textContent = glazes.names[i];
@@ -57,9 +57,9 @@ populateGlazing();
 
 function populatePacks() {
     
-    var packDisplayedName = document.querySelector('#sizing');
+    let packDisplayedName = document.querySelector('#sizing');
 
-    for (var i = 0; i < packs.sizes.length; i++) {
+    for (let i = 0; i < packs.sizes.length; i++) {
         let option = document.createElement("option");
         option.setAttribute("value", packs.prices[i]);
         option.textContent = packs.sizes[i];
@@ -69,9 +69,42 @@ function populatePacks() {
 
 populatePacks();
 
-function glazingChange(element) {
-    const priceChange = element.value;
+// UPDATING PRICING
+
+let glazeDisplayedName = document.querySelector('#glazing');
+let packDisplayedName = document.querySelector('#sizing');
+
+let currentPrice = document.querySelector(".details-pricing");
+const basePrice = 2.49;
+
+function glazingChange() {
+    console.log('You selected ' + this.value);
+    console.log(basePrice + this.value);
+    let priceChange = parseFloat(this.value);
+    let newPrice = (basePrice + priceChange) * packDisplayedName.value;
+    newPrice = newPrice.toFixed(2);
+    let newPriceText = newPrice.toString();
+    currentPrice.textContent = '$ ' + newPriceText;
 }
+
+function packChange() {
+    console.log('You selected ' + this.value);
+    console.log(basePrice + this.value);
+    let sizeChange = this.value;
+    let newPrice = (basePrice + parseFloat(glazeDisplayedName.value)) * sizeChange;
+    newPrice = newPrice.toFixed(2);
+    let newPriceText = newPrice.toString();
+    currentPrice.textContent = '$ ' + newPriceText;
+}
+
+
+glazeDisplayedName.addEventListener('change', glazingChange);
+packDisplayedName.addEventListener('change', packChange);
+
+
+
+
+
 
 
 
