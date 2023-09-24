@@ -106,7 +106,7 @@ h1.current-page-heading {
 
 /* Make sure not to specify font weight here! It'll override the hover effect. */
 p.gallery-text {
-    font-size: 28px;
+    font-size: 24px;
     margin-top: 10px;
 }
 
