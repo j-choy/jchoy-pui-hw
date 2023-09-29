@@ -1,0 +1,294 @@
+* {
+    margin: 0px auto;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+header {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    /* align-items: center; */
+}
+
+
+.header-right {
+    flex-grow: 1;
+}
+
+.logo {
+    width: 400px;
+    display: flex;
+    flex-grow: 0;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 90px;
+    margin-right: 60px;
+    margin-top: 20px;
+    line-height: 200%;
+    font-size: 28px; 
+}
+
+
+
+.menu-link {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+
+.current-page {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+hr.top-separator {
+    border: 3px solid black;
+    width: 98%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+h1.current-page-heading {
+    text-align: left;
+    margin-top: 55px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    font-size: 32px;
+}
+
+/* ---------- GALLERY ------------------------------------------------------ */
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.gallery-card {
+    width: 290px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.gallery-card:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.gallery-image {
+    width: 285px;
+    height: 285px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Make sure not to specify font weight here! It'll override the hover effect. */
+p.gallery-text {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.gallery-item-name {
+    text-decoration: underline;
+    
+}
+
+.gallery-item-price {
+    font-weight: normal;
+}
+
+/* ---------- DETAILS PAGE ------------------------------------------------------ */
+
+#details-heading {
+    text-align: left;
+    margin-top: 55px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    font-size: 32px;
+}
+
+main.details-container {
+    display: flex;
+    gap: 0;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 70px;
+}
+
+.dropdown-and-add-to-cart {
+    width: 300px;
+    padding: 50px;
+    margin-left: 10px;
+}
+
+.details-card {
+    width: 600px;
+    margin-left: 100px;
+}
+
+.details-image {
+    width: 600px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+#dropdown-description {
+    font-size: 24px;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 24px;
+}
+
+select {
+    font-size: 24px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.details-text {
+    margin-bottom: 50px;
+}
+
+
+.order {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.details-pricing {
+    font-size: 24px;
+    text-align: right;
+    margin: 0;
+    padding: 0px 10px;
+}
+
+.cart-button {
+    background-color: yellow;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+
+/* ---------- SHOPPING CART ------------------------------------------------------ */
+
+.shopping-cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.shopping-cart-card {
+    align-items: center;
+    display: flex;
+    width: 680px;
+    margin-left: 0;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.shopping-cart-image-and-remove {
+    margin-left: 0px;
+}
+
+.remove {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.shopping-cart-text {
+    width: 400px;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 45px;
+}
+
+.shopping-cart-card-image {
+    width: 200px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.total-separator {
+    width: 65%;
+    border: 3px solid black;
+    margin-left: 450px;
+    margin-right: 0;
+}
+
+.checkout {
+    text-align: end;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 60px;
+}
+
+.total-price-text {
+    display: flex;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.total-label {
+    margin-right: 0;
+}
+
+.total-price {
+    margin-left: 320px;
+    margin-right: 5px;
+}
+
+.checkout-button {
+    background-color: yellow;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 20px;
+    margin-right: 0;
+}
+
