@@ -1,3 +1,23 @@
+// ALL DATA PULLED FROM RollsData.js
+
+let cart = [];
+
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get('roll');
+
+let headerElement = document.querySelector('#details-heading');
+headerElement.innerText = rollType + ' cinnamon roll';
+
+let imageElement = document.querySelector('.details-image');
+imageElement.src = '../assets/products/' + rollType + '-cinnamon-roll.jpg';
+console.log('../../assets/products/' + rollType);
+
+let priceElement = document.querySelector('.details-pricing');
+priceElement.textContent = '$ ' + rolls[rollType].basePrice; 
+
+// GLAZE AND PACK INFO
+
 const glazes = {
     names: ["Keep original", "Sugar milk", "Vanilla milk", "Double chocolate"],
     prices: [0.00, 0.00, 0.50, 1.50],
@@ -70,23 +90,7 @@ function packChange() {
 glazeDisplayedName.addEventListener('change', glazingChange);
 packDisplayedName.addEventListener('change', packChange);
 
-// ALL DATA PULLED FROM RollsData.js
 
-let cart = [];
-
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-const rollType = params.get('roll');
-
-let headerElement = document.querySelector('#details-heading');
-headerElement.innerText = rollType + ' cinnamon roll';
-
-let imageElement = document.querySelector('.details-image');
-imageElement.src = '../assets/products/' + rollType + '-cinnamon-roll.jpg';
-console.log('../../assets/products/' + rollType);
-
-let priceElement = document.querySelector('.details-pricing');
-priceElement.textContent = '$ ' + rolls[rollType].basePrice; 
 
 
 
