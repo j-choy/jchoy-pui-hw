@@ -1,7 +1,5 @@
 // ALL DATA PULLED FROM RollsData.js
 
-let cart = [];
-
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
@@ -76,6 +74,7 @@ function glazingChange() {
     newPrice = newPrice.toFixed(2);
     let newPriceText = newPrice.toString();
     currentPrice.textContent = '$ ' + newPriceText;
+    glazingIndex = glazeDisplayedName.selectedIndex;
 }
 
 function packChange() {
@@ -84,12 +83,39 @@ function packChange() {
     newPrice = newPrice.toFixed(2);
     let newPriceText = newPrice.toString();
     currentPrice.textContent = '$ ' + newPriceText;
+    return currentPrice;
 }
 
 
 glazeDisplayedName.addEventListener('change', glazingChange);
 packDisplayedName.addEventListener('change', packChange);
 
+const cart = [];
+
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+cartButton = document.querySelector('.cart-button');
+
+function addToCart() {
+    let glazingIndex = glazeDisplayedName.selectedIndex;
+    // console.log(glazingIndex);
+    let packIndex = packDisplayedName.selectedIndex;
+    let roll = new Roll(rollType, glazes.names[glazingIndex], packs.sizes[packIndex], basePrice);
+    cart.push(roll);
+    console.log(cart);
+}
+
+
+// console.log(glazingIndex);
+cartButton.addEventListener('click', addToCart);
 
 
 
@@ -97,10 +123,3 @@ packDisplayedName.addEventListener('change', packChange);
 
 
 
-
-
-// function onSelectValueChange() {
-//     console.log
-// }
-
-// console.log(glazeOptions[0].text)
