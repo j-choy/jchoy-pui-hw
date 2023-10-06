@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Shopping Cart</title>
+
+    <!-- Links to obtain fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./js/rollsData.js"></script>
+    <script src="./js/app.js" defer></script>
+
+  </head>
+  
+  
+  <body>
+
+    <header>
+      <a class="logo" href="index.html">
+        <img class="logo" src="../assets/logo/logo-01.svg" width="400" alt="Bun Bun Bake Shop logo" />
+      </a>
+      <nav class="header-right">
+        <div class="menu">
+          <a href="index.html">
+            <span class="current-page">PRODUCTS</span>
+          </a>
+          <a href="cart.html">
+            <span class="menu-link">CART</span></a>
+        </div>
+        <hr class="top-separator">
+        <h1 class="current-page-heading">Shopping Cart</h1>
+      </nav>
+    </header>
+  
+    <div id="shopping-cart">
+      <!-- TEMPLATE -->
+      <template id="cart-template">
+        <section class="shopping-cart-card">
+          <div class="shopping-cart-image-and-remove">
+            <img class="shopping-cart-card-image" src="../assets/products/original-cinnamon-roll.jpg" width="200" alt="Original cinnamon roll" />
+            <div class="remove">
+              Remove
+            </div>
+          </div>
+          <div id="cart-roll-type">
+            Original cinnamon roll
+          </div>
+          <div id="cart-glaze">
+            Glazing: Keep original
+          </div>
+          <div id="cart-pack-size">
+            Pack Size: 1
+          </div>
+  
+          <h1 id="cart-price-individual">$2.49</h1>
+        </section>
+      </template>
+      
+
+      <!-- <section class="shopping-cart-card">
+        <div class="shopping-cart-image-and-remove">
+          <img class="shopping-cart-card-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg" width="200" alt="Original cinnamon roll" />
+          <div class="remove">
+            Remove
+          </div>
+        </div>
+        <p class="shopping-cart-text">
+            Double Chocolate Cinnamon Roll
+            <br />
+            Glazing: Sugar milk
+            <br />
+            Pack Size: 6
+        </p>
+
+        <h1>$27.45</h1>
+      </section> -->
+
+      
+    </div>
+
+    <hr class="total-separator" />
+
+      
+
+    <!-- <section class="checkout">
+      <p id="total-price-text">Total: $29.94</p>
+      <button class="checkout-button" type="button">
+        Checkout
+      </button>
+    </section> -->
+
+    <section class="checkout">
+      <div class="total-price-text">
+        <div class="total-label">
+          Total
+        </div>
+        <div class="total-price">
+          $29.94
+        </div>
+      </div>
+      <button class="checkout-button" type="button">
+        Checkout
+      </button>
+    </section>
+      
+
+    
+
+  </body>
+</html>
