@@ -81,6 +81,7 @@ h1.current-page-heading {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    width: 1000px;
 }
 
 .gallery-card {
