@@ -23,7 +23,7 @@ const rollType = params.get('roll');
 // }
 
 function addRoll(roll) {
-    console.log('Adding roll');
+    // console.log('Adding roll');
     glazeIndex = glazes.names.indexOf(roll.glazing);
     packIndex = packs.sizes.indexOf(roll.size);
     roll.basePrice = (roll.basePrice + glazes.prices[glazeIndex]) * packs.prices[packIndex];
@@ -70,15 +70,17 @@ function createElement(roll) {
     shoppingCart.appendChild(roll.element);
 }
 
+// TEMPLATE CLONING CART CONTENTS 
+
+let displayedCartTotal = document.querySelector('.total-price');
+let cartTotal = 0;
+
 for (const roll of cart) {
     createElement(roll);
+    cartTotal = cartTotal + parseFloat(roll.basePrice);
+    console.log(cartTotal);
     
 }
 
-const totalCartPrice = document.querySelector('.total-price');
-totalCartPrice.textContent = 0;
-for (const roll of cart) {
-    totalCartPrice.textContent = totalCartPrice.textContent.float() + roll.basePrice;
-}
-
+displayedCartTotal.innerHTML = '$ ' + cartTotal;
 
