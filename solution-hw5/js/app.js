@@ -61,7 +61,7 @@ function createElement(roll) {
     const clonePrice = clone.querySelector('#cart-price-individual');
     const cloneRemove = clone.querySelector('.remove');
 
-    cloneImage.src = '../assets/products/' + roll.type.toLowerCase() + '-cinnamon-roll.jpg';
+    cloneImage.src = '.././assets/products/' + roll.type.toLowerCase() + '-cinnamon-roll.jpg';
     cloneRollType.textContent = roll.type + ' Cinnamon Roll';
     cloneGlaze.textContent = 'Glazing: ' + roll.glazing;
     clonePackSize.textContent = 'Pack size: ' + roll.size;

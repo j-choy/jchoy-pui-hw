@@ -7,10 +7,6 @@ const rollType = params.get('roll');
 let headerElement = document.querySelector('#details-heading');
 headerElement.innerText = rollType + ' cinnamon roll';
 
-let imageElement = document.querySelector('.details-image');
-imageElement.src = '.././assets/products/' + rollType.toLowerCase() + '-cinnamon-roll.jpg';
-console.log('../../assets/products/' + rollType);
-
 let priceElement = document.querySelector('.details-pricing');
 priceElement.textContent = '$ ' + rolls[rollType].basePrice; 
 
