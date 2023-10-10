@@ -4,24 +4,6 @@ const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
 
 
-
-
-
-// function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
-//     const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
-//     glazeIndex = glazes.names.indexOf(roll.glaze);
-//     packIndex = packs.sizes.indexOf(packSize);
-//     roll.basePrice = (roll.basePrice + glazes.prices[glazeIndex]) * packs.prices[packIndex];
-//     roll.basePrice = roll.basePrice.toFixed(2);
-
-//     cart.add(roll);
-
-    
-        
-
-//     return roll;
-// }
-
 function addRoll(roll) {
     // console.log('Adding roll');
     glazeIndex = glazes.names.indexOf(roll.glazing);
@@ -30,13 +12,7 @@ function addRoll(roll) {
     roll.basePrice = roll.basePrice.toFixed(2);
 
     cart.add(roll);
-
-    // return roll;
 }
-
-
-
-
 
 addRoll(rollOriginal);
 addRoll(rollWalnut);
@@ -44,6 +20,19 @@ addRoll(rollRaisin);
 addRoll(rollApple);
 
 const shoppingCart = document.querySelector('#shopping-cart');
+
+// CALCULATE CART TOTAL
+
+let displayedCartTotal = document.querySelector('.total-price');
+let cartTotal = 0;
+
+// FUNCTION TO CALCULATE TOTAL PRICE
+
+function updatePrice(roll) {
+    cartTotal -= roll.basePrice;
+}
+
+
 
 // MAKE TEMPLATE OF THE SHOPPING CART CARD
 
@@ -68,12 +57,18 @@ function createElement(roll) {
     clonePrice.textContent = '$ ' + roll.basePrice;
 
     shoppingCart.appendChild(roll.element);
+
+    // WHEN YOU CLICK THE REMOVE BUTTON, SHOULD REMOVE THE ROLL FROM CART
+
+    let removeButton = roll.element.querySelector('.remove');
+    removeButton.addEventListener('click', () => {removeRoll(roll);
+    });
 }
 
-// TEMPLATE CLONING CART CONTENTS 
+// function updateElement(roll) {
 
-let displayedCartTotal = document.querySelector('.total-price');
-let cartTotal = 0;
+// }
+
 
 for (const roll of cart) {
     createElement(roll);
@@ -82,5 +77,20 @@ for (const roll of cart) {
     
 }
 
-displayedCartTotal.innerHTML = '$ ' + cartTotal;
+//  UPDATE TOTAL CART PRICE
+
+displayedCartTotal.innerHTML = '$ ' + cartTotal.toFixed(2);
+
+
+
+function removeRoll(roll) {
+    if (cart.size > 0) {
+        roll.element.remove();
+        cart.delete(roll);
+        updatePrice(roll);
+        console.log(cartTotal);
+        displayedCartTotal.innerHTML = '$ ' + cartTotal.toFixed(2);
+    }
+    
+}
 
