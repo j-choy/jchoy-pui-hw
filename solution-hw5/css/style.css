@@ -237,6 +237,10 @@ select {
     text-align: left;
 }
 
+.remove:hover {
+    cursor: pointer;
+}
+
 .cart-info {
     text-align: left;
     flex-grow: 1;
