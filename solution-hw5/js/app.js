@@ -55,6 +55,7 @@ function createElement(roll) {
     cloneGlaze.textContent = 'Glazing: ' + roll.glazing;
     clonePackSize.textContent = 'Pack size: ' + roll.size;
     clonePrice.textContent = '$ ' + roll.basePrice;
+    cloneRemove.textContent = 'Remove';
 
     shoppingCart.appendChild(roll.element);
 
