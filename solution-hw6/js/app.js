@@ -3,9 +3,6 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
 
-
-
-
 const shoppingCart = document.querySelector('#shopping-cart');
 
 // CALCULATE CART TOTAL
@@ -18,10 +15,6 @@ let cartTotal = 0;
 function updatePrice(roll) {
     cartTotal -= roll.basePrice;
 }
-
-
-
-
 
 // MAKE TEMPLATE OF THE SHOPPING CART CARD
 

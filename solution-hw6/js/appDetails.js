@@ -98,11 +98,9 @@ function saveToLocalStorage() {
 
 function addToCart() {
     let glazingIndex = glazeDisplayedName.selectedIndex;
-    // console.log(glazingIndex);
     let packIndex = packDisplayedName.selectedIndex;
+    
     let roll = new Roll(rollType, glazes.names[glazingIndex], packs.sizes[packIndex], basePrice);
-    // glazingIndex = glazes.names.indexOf(roll.glazing);
-    // packIndex = packs.sizes.indexOf(roll.size);
     roll.basePrice = (roll.basePrice + glazes.prices[glazingIndex]) * packs.prices[packIndex];
     roll.basePrice = roll.basePrice.toFixed(2);
     cart.add(roll);
@@ -120,7 +118,7 @@ function retrieveFromLocalStorage() {
 
     for (const rollData of cartArray) {
         const roll = new Roll(rollData.type, rollData.glazing, rollData.size, rollData.basePrice);
-        cart.add(roll);
+        cart.add(roll);     //  THE CART SET REFRESHES EACH TIME; MUST ADD THEM BACK WHEN RETRIEVING FROM LOCALSTORAGE
     }
 }
 

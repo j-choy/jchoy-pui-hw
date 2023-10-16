@@ -49,25 +49,7 @@ class Roll {
 
 const cart = new Set();
 
-// const rollOriginal = new Roll('Original', 'Sugar milk', 1, 2.49);
-// const rollWalnut = new Roll('Walnut', 'Vanilla milk', 12, 3.49);
-// const rollRaisin = new Roll('Raisin', 'Sugar milk', 3, 2.99);
-// const rollApple = new Roll('Apple', 'Keep original', 3, 3.49);
 
-// function addRoll(roll) {
-//     // console.log('Adding roll');
-//     glazeIndex = glazes.names.indexOf(roll.glazing);
-//     packIndex = packs.sizes.indexOf(roll.size);
-//     roll.basePrice = (roll.basePrice + glazes.prices[glazeIndex]) * packs.prices[packIndex];
-//     roll.basePrice = roll.basePrice.toFixed(2);
-
-//     cart.add(roll);
-// }
-
-// addRoll(rollOriginal);
-// addRoll(rollWalnut);
-// addRoll(rollRaisin);
-// addRoll(rollApple);
 
 
 
