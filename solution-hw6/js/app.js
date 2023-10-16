@@ -58,12 +58,7 @@ function createElement(roll) {
 // }
 
 
-for (const roll of cart) {
-    createElement(roll);
-    cartTotal = cartTotal + parseFloat(roll.basePrice);
-    console.log(cartTotal);
-    
-}
+
 
 //  UPDATE TOTAL CART PRICE
 
@@ -82,3 +77,25 @@ function removeRoll(roll) {
     
 }
 
+// RETRIEVE FROM LOCAL STORAGE
+
+function retrieveFromLocalStorage() {
+    const cartString = localStorage.getItem('cart');
+    cartArray = JSON.parse(cartString);
+    console.log(cartArray);
+
+    for (const rollData of cartArray) {
+        const roll = new Roll(rollData.type, rollData.glazing, rollData.size, rollData.basePrice);
+        createElement(roll);
+        cartTotal = cartTotal + parseFloat(roll.basePrice);
+        console.log(cartTotal);
+        
+    }
+}
+
+
+if (localStorage.getItem('cart') != null) {
+    retrieveFromLocalStorage();
+} else {
+    cart.clear();
+}
