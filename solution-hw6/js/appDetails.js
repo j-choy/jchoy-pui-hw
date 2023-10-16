@@ -89,7 +89,6 @@ cartButton.addEventListener('click', addToCart);
 
 function saveToLocalStorage() {
     const cartArray = Array.from(cart);
-
     const cartArrayString = JSON.stringify(cartArray);
     localStorage.setItem('cart', cartArrayString);
     console.log(cart);
@@ -102,9 +101,9 @@ function addToCart() {
     // console.log(glazingIndex);
     let packIndex = packDisplayedName.selectedIndex;
     let roll = new Roll(rollType, glazes.names[glazingIndex], packs.sizes[packIndex], basePrice);
-    glazeIndex = glazes.names.indexOf(roll.glazing);
-    packIndex = packs.sizes.indexOf(roll.size);
-    roll.basePrice = (roll.basePrice + glazes.prices[glazeIndex]) * packs.prices[packIndex];
+    // glazingIndex = glazes.names.indexOf(roll.glazing);
+    // packIndex = packs.sizes.indexOf(roll.size);
+    roll.basePrice = (roll.basePrice + glazes.prices[glazingIndex]) * packs.prices[packIndex];
     roll.basePrice = roll.basePrice.toFixed(2);
     cart.add(roll);
 
@@ -118,6 +117,11 @@ function retrieveFromLocalStorage() {
     const cartString = localStorage.getItem('cart');
     cartArray = JSON.parse(cartString);
     console.log(cartArray);
+
+    for (const rollData of cartArray) {
+        const roll = new Roll(rollData.type, rollData.glazing, rollData.size, rollData.basePrice);
+        cart.add(roll);
+    }
 }
 
 

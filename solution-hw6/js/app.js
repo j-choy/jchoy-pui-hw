@@ -21,6 +21,8 @@ function updatePrice(roll) {
 
 
 
+
+
 // MAKE TEMPLATE OF THE SHOPPING CART CARD
 
 function createElement(roll) {
@@ -53,29 +55,18 @@ function createElement(roll) {
     });
 }
 
-// function updateElement(roll) {
-
-// }
-
-
-
-
-//  UPDATE TOTAL CART PRICE
-
-displayedCartTotal.innerHTML = '$ ' + cartTotal.toFixed(2);
-
-
 
 function removeRoll(roll) {
     if (cart.size > 0) {
-        roll.element.remove();
-        cart.delete(roll);
+        roll.element.remove();      //  REMOVES ROLL ELEMENT FROM THE DOM
+        cart.delete(roll);          // REMOVES ROLL FROM THE CART SET
         updatePrice(roll);
         console.log(cartTotal);
+        saveToLocalStorage();
         displayedCartTotal.innerHTML = '$ ' + cartTotal.toFixed(2);
     }
-    
 }
+
 
 // RETRIEVE FROM LOCAL STORAGE
 
@@ -86,16 +77,29 @@ function retrieveFromLocalStorage() {
 
     for (const rollData of cartArray) {
         const roll = new Roll(rollData.type, rollData.glazing, rollData.size, rollData.basePrice);
+        cart.add(roll);
         createElement(roll);
-        cartTotal = cartTotal + parseFloat(roll.basePrice);
+        cartTotal += parseFloat(roll.basePrice);
         console.log(cartTotal);
         
     }
 }
 
+function saveToLocalStorage() {
+    const cartArray = Array.from(cart);
+    const cartArrayString = JSON.stringify(cartArray);
+    localStorage.setItem('cart', cartArrayString);
+    console.log(cart);
+}
+
+//  RETRIEVE CART CONTENTS FROM LOCAL STORAGE WHEN PAGE LOADS
 
 if (localStorage.getItem('cart') != null) {
     retrieveFromLocalStorage();
 } else {
     cart.clear();
 }
+
+//  UPDATE TOTAL CART PRICE
+
+displayedCartTotal.innerHTML = '$ ' + cartTotal.toFixed(2);
