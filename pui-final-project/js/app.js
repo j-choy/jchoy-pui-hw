@@ -1,4 +1,5 @@
 anime({
     targets: '.circle',
-    translateX: 250
+    translateX: 250,
+    // loop: true,
 })
