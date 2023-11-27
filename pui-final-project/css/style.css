@@ -1,0 +1,27 @@
+* {
+    margin: 0px auto;
+}
+
+body {
+    background: #394968;
+    font-family: Karla, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    color: white;
+}
+
+main {
+    /* display: flex; */
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
