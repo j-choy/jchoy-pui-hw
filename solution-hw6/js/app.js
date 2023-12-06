@@ -64,8 +64,8 @@ function removeRoll(roll) {
 // RETRIEVE FROM LOCAL STORAGE
 
 function retrieveFromLocalStorage() {
-    const cartString = localStorage.getItem('cart');
-    cartArray = JSON.parse(cartString);
+    const cartString = localStorage.getItem('cart');    // Get the contents of the cart from localStorage
+    cartArray = JSON.parse(cartString);     // Parse the cart content string into an array
     console.log(cartArray);
 
     for (const rollData of cartArray) {
