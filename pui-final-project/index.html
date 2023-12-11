@@ -19,16 +19,16 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <script src="./anime-master/lib/anime.min.js"></script>
+        <script defer src="./js/app.js"></script>
     </head>
 
     <body>
         <header>
             <h1 class="homepage-header">
-                Select a drink to see how it's made.
+                Welcome! Select a drink to see how it's made.
             </h1>
         </header>
 
-        <main>
             <!-- <section class="coffee">
                 <a href="latte.html">
                     <svg class="cup" xmlns="http://www.w3.org/2000/svg" width="166" height="88" viewBox="0 0 166 88" fill="none">
@@ -39,33 +39,34 @@
                 </a>
             </section> -->
 
-            <section class="coffee">
-                <a href="americano.html">
-                    <img class="coffee-img" src="assets/americano.png" alt="Americano" />
-                </a>
-                <div class="coffee-name">
-                    Americano
-                </div>
-            </section>
+            <section class="coffee-container">
+                <section class="coffee">
+                    <a href="americano.html">
+                        <img class="coffee-img" src="assets/americano.png" alt="Americano" />
+                    </a>
+                    <div class="coffee-name">
+                        Americano
+                    </div>
+                </section>
+    
+                <section class="coffee">
+                    <a href="latte.html">
+                        <img class="coffee-img" src="assets/latte.png" alt="Latte" />
+                    </a>
+                    <div class="coffee-name">
+                        Latté
+                    </div>
+                </section>
 
-            <section class="coffee">
-                <a href="cappuccino.html">
-                    <img class="coffee-img" src="assets/cappuccino.png" alt="Cappuccino" />
-                </a>
-                <div class="coffee-name">
-                    Cappuccino
-                </div>
-            </section>
+                <section class="coffee">
+                    <a href="cappuccino.html">
+                        <img class="coffee-img" src="assets/cappuccino.png" alt="Cappuccino" />
+                    </a>
+                    <div class="coffee-name">
+                        Cappuccino
+                    </div>
+                </section>
 
-            <section class="coffee">
-                <a href="latte.html">
-                    <img class="coffee-img" src="assets/latte.png" alt="Latte" />
-                </a>
-                <div class="coffee-name">
-                    Latté
-                </div>
             </section>
-
-        </main>
     </body>
 </html>
