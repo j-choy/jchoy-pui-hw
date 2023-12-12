@@ -14,3 +14,4 @@ anime({
     easing: 'easeOutQuad',
     duration: 2500,
   })
+
