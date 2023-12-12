@@ -18,6 +18,40 @@ anime({
     baseFrequency: 0,
 })
 
+
+// TYPEWRITING ANIMATION
+
+const typewriterText = document.getElementById('typewriter-animated');
+const animatedText = "Welcome! Select a drink to see how it's made.";
+
+function animationTypewriter() {
+
+  // anime({
+  //   targets: typewriterText,
+  //   opacity: 1,
+  //   easing: 'linear',
+  //   duration: 500
+  // });
+
+  anime({
+    targets: typewriterText,
+    innerHTML: [0, animatedText.length],
+    easing: 'linear',
+    round: 1,
+    delay: 500,
+    duration: 2000,
+    update: function () {
+      typewriterText.innerHTML = animatedText.substring(0, Math.round(typewriterText.innerHTML));
+    },
+  });
+
+}
+
+setTimeout(animationTypewriter, 150);
+
+
+// HOVER ANIMATION 
+
 var coffeeSelection = document.querySelectorAll('.coffee-img');
 
 function animateButton(el, scale, duration, elasticity) {
@@ -47,3 +81,5 @@ for (var i = 0; i < coffeeSelection.length; i++) {
     leaveButton(e.target)
   }, false);  
 }
+
+
