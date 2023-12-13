@@ -21,7 +21,7 @@ header {
 
 .coffee-container {
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
     gap: 30px;
     width: 900px;
 }
@@ -101,6 +101,11 @@ h2 {
     transform: translateY(100px);
 } */
 
+.next-wrapper {
+    width: 100px;
+    margin-top: 50px;
+}
+
 button {
     font-family: Karla, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 16px;
@@ -120,6 +125,7 @@ button:hover {
 }
 
 .next {
+    margin-top: 50px;
     display: block;
 }
 
