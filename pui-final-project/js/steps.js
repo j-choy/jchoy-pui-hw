@@ -16,7 +16,7 @@ anime({
   })
 
 
-  var milkHover = document.querySelectorAll('#milk');
+  var milkHover = document.querySelectorAll('#steps-image-hover');
 
   function animateButton(el, scale, duration, elasticity) {
     anime.remove(el);
