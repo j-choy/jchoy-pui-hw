@@ -38,6 +38,13 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Karla', Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+}
+
 .homepage-header {
     margin-top: 50px;
 }
@@ -108,8 +115,12 @@ button {
     border-radius: 20px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .next {
-    display: flex;
+    display: block;
 }
 
 
