@@ -16,4 +16,32 @@ anime({
   })
 
 
+  var milkHover = document.querySelectorAll('#milk');
 
+  function animateButton(el, scale, duration, elasticity) {
+    anime.remove(el);
+    anime({
+      targets: el,
+      scale: scale,
+      duration: duration,
+      elasticity: elasticity
+    });
+  }
+  
+  function enterButton(el) {
+    animateButton(el, 1.1, 800, 500)
+  };
+  
+  function leaveButton(el) {
+    animateButton(el, 1.0, 600, 300)
+  };
+  
+  for (var i = 0; i < milkHover.length; i++) {
+    milkHover[i].addEventListener('mouseenter', function(e) {
+      enterButton(e.target);
+    }, false);
+    
+    milkHover[i].addEventListener('mouseleave', function(e) {
+      leaveButton(e.target)
+    }, false);  
+  }

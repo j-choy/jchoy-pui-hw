@@ -38,7 +38,7 @@ setTimeout(animationTypewriter, 150);
 
 // HOVER ANIMATION 
 
-var coffeeSelection = document.querySelectorAll('.coffee-img');
+var milkHover = document.querySelectorAll('.coffee-img');
 
 function animateButton(el, scale, duration, elasticity) {
   anime.remove(el);
@@ -58,12 +58,12 @@ function leaveButton(el) {
   animateButton(el, 1.0, 600, 300)
 };
 
-for (var i = 0; i < coffeeSelection.length; i++) {
-  coffeeSelection[i].addEventListener('mouseenter', function(e) {
+for (var i = 0; i < milkHover.length; i++) {
+  milkHover[i].addEventListener('mouseenter', function(e) {
     enterButton(e.target);
   }, false);
   
-  coffeeSelection[i].addEventListener('mouseleave', function(e) {
+  milkHover[i].addEventListener('mouseleave', function(e) {
     leaveButton(e.target)
   }, false);  
 }
