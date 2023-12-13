@@ -26,8 +26,13 @@ body {
     width: 900px;
 }
 
+.gallery-img-wrapper {
+    width: 170px;
+    height: 120px;
+}
+
 h1 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Karla', Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-weight: 400;
     font-size: 40px;
     text-align: center;
@@ -52,11 +57,20 @@ h1 {
 
 /*  THE FOLLOWING IS FLEX WRAPPER FOR INTERACTABLE STEPS */
 .coffee-steps-interactable {
-    width: 500px;
+    width: 300px;
     margin-top: 100px;
     display: flex;
-    gap: 30px;
+    gap: 0px;
     align-items: flex-end;
+}
+
+.image-flex-card {
+    width: 200px;
+}
+
+.caption-wrapper {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .steps-text {
@@ -80,8 +94,7 @@ h1 {
     transform: translateY(100px);
 } */
 
-.next {
-    margin-top: 50px;
+button {
     font-family: Karla, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 16px;
     color: #013464;
@@ -93,7 +106,16 @@ h1 {
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 20px;
-    display: block;
+}
+
+.next {
+    display: flex;
+}
+
+
+.back {
+    margin-top: 50px;
+    margin-left: 100px;
 }
 
 a {
