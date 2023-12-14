@@ -90,6 +90,11 @@ h2 {
     display: block;
 }
 
+#cream {
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
 /* #cup-interactable {
     margin-top: 250px; 
     position: relative;
